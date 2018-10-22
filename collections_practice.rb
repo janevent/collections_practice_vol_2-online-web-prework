@@ -52,7 +52,6 @@
       keys[key][:first_name]
       data.each do |item, name|
         new_array.push(data[item][name])
-        
       end
     end
     new_array
