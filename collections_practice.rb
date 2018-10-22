@@ -51,7 +51,7 @@
     keys.each do |key|
       keys[key][:first_name]
       data.each do |item|
-        new_array.push(item)
+        
       end
     end
     new_array
