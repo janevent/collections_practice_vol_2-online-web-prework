@@ -50,7 +50,8 @@
     new_array = []    
     keys.each do |key|
       keys[key][:first_name]
-      data.each do |item|
+      data.each do |item, name|
+        new_array.push(data[item][name])
         
       end
     end
