@@ -49,7 +49,7 @@
         #push or shovekey/values into new empty array
     new_array = []    
     keys.each do |key|
-      key[:first_name]
+      keys[key][:first_name]
       data.each do |item|
         new_array.push(item)
       end
