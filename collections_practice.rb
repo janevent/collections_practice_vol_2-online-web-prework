@@ -28,17 +28,41 @@
   end
   
   def count_elements(array)
-    array.each do |hash|
-      hash[:count] = 0
-      count = hash[:count]
-      name = hash[:name]
-      array.each do |hash|
-        if hash[:name] == name
-          hash[:count] = count + 1
+    array.each do |hash_1|
+      hash_1[:count] = 0
+      count = hash_1[:count]
+      name = hash_1[:name]
+      array.each do |hash_2|
+        if hash_2[:name] == name
+          hash_1[:count] += 1
         end
       end
     end
     array.uniq!
   end
+  
+  def merge_data(keys, data)
+    #crate a new empty array
+    #iterate trhough keys
+      #extract the first_name
+      #iterate through data
+        #push or shovekey/values into new empty array
+    new_array = []    
+    keys.each do |key|
+      key[:first_name]
+      data.each do |item|
+        new_array.push(item)
+      end
+    end
+    new_array
+    #return new array
+  end
+  
+  def find_cool(cool)
+    if h.has_value?("cool")
+      return h 
+    end
+  end
+    
     
     
